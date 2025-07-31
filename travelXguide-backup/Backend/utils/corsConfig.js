@@ -12,8 +12,8 @@ export const createCorsConfig = () => {
     "http://localhost:4173",
     "https://localhost:4173",
     // Add your production domains here
-    process.env.PRODUCTION_URL,
-    process.env.STAGING_URL,
+   "https://travel-x-guide-xi.vercel.app",  // ✅ from PRODUCTION_URL
+  "https://travel-x-guide.vercel.app"
   ].filter(Boolean); // Remove undefined values
 
   console.log("🌐 Allowed CORS origins:", allowedOrigins);
