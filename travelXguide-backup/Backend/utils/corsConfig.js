@@ -20,6 +20,7 @@ export const createCorsConfig = () => {
 
   const corsOptions = {
     origin: function (origin, callback) {
+       console.log("🌐 Incoming request origin:", origin); // 👈 ADD THIS
       // Allow requests with no origin (like mobile apps or curl requests)
       if (!origin) return callback(null, true);
       
