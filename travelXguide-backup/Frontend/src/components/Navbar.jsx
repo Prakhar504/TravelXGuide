@@ -97,13 +97,7 @@ const Navbar = () => {
                   </div>
                   
                   {/* Tour Hosting Links */}
-                  <Link
-                    to="/host-tour"
-                    className="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 text-left"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    🏔️ Host a Tour
-                  </Link>
+                  
                   <Link
                     to="/my-tours"
                     className="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 text-left"
