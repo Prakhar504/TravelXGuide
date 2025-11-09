@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- ⚡ PERFORMANCE: DNS Prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    
+    <!-- ⚡ PERFORMANCE: Preconnect to API -->
+    <link rel="preconnect" href="http://localhost:5000" crossorigin />
+    
+    <!-- ⚡ PERFORMANCE: Load Font Awesome asynchronously to avoid render blocking -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </noscript>
+    
+    <!-- ⚡ PERFORMANCE: Inline critical font loading script -->
+    <script>
+      // Load Font Awesome asynchronously
+      !function(e){"use strict";var t=function(t,n,r){var o,a=e.document,i=a.createElement("link");if(n)o=n;else{var l=(a.body||a.getElementsByTagName("head")[0]).childNodes;o=l[l.length-1]}var d=a.styleSheets;i.rel="stylesheet",i.href=t,i.media="only x",function e(t){if(a.body)return t();setTimeout(function(){e(t)})}(function(){o.parentNode.insertBefore(i,n?o:o.nextSibling)});var f=function(e){for(var t=i.href,n=d.length;n--;)if(d[n].href===t)return e();setTimeout(function(){f(e)})};return i.addEventListener&&i.addEventListener("load",r),i.onloadcssdefined=f,f(r),i};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this);
+    </script>
+    
+    <title>TravelXGuide - Your Ultimate Travel Companion</title>
+    
+    <!-- ⚡ PERFORMANCE: Meta tags for better caching -->
+    <meta name="description" content="Discover expert local guides and exciting tours with TravelXGuide" />
+    <meta name="theme-color" content="#3b82f6" />
+  </head>
+  <body>
+    <!-- ⚡ PERFORMANCE: Add loading indicator -->
+    <div id="root">
+      <div style="display: flex; justify-content: center; align-items: center; height: 100vh; background: linear-gradient(to bottom right, #dbeafe, #f3e8ff, #fce7f3);">
+        <div style="text-align: center;">
+          <div style="width: 48px; height: 48px; border: 4px solid #e5e7eb; border-top-color: #3b82f6; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 16px;"></div>
+          <p style="color: #6b7280; font-size: 18px; font-weight: 500;">Loading TravelXGuide...</p>
+        </div>
+      </div>
+      <style>
+        @keyframes spin {
+          to { transform: rotate(360deg); }
+        }
+      </style>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
